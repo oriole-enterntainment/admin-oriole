@@ -1,0 +1,16 @@
+.main{
+    display:flex;
+    width: 95%;
+    margin: 0 auto;
+}
+.div1{
+    flex:.65;
+}
+.div2{
+    flex:.35
+}
+
+.img{
+    width: 100%;
+
+}

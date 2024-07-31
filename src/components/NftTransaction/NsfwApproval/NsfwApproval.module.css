@@ -1,0 +1,41 @@
+.table {
+    width: 100%;
+    display: grid;
+}
+
+div{
+    font-size:inherit;
+    font-weight:inherit;
+    font-style:inherit;
+    color:inherit;
+}
+.head {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    line-height: 40px;
+    margin-left: 40px;
+    font-weight: bold;
+    margin-bottom: 21px;
+    background: #FAFAFA;
+    height: 54px;
+    padding: 15px;
+    border-top: 1px solid #E3E3E3;
+    
+}
+
+.row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 20px;
+    border: 1px solid #E3E3E3;
+    /* height: 61px; */
+}
+
+.body{
+    display:grid;
+    box-sizing: border-box;
+}
