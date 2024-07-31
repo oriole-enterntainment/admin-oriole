@@ -24,6 +24,9 @@ const AdminLogin = () => {
       })
       .catch((err) => {
         console.log(err);
+       if(err.code === 'auth/invalid-login-credentials'){
+        alert('Invalid Password or email.')
+       }
       });
   };
 
