@@ -201,12 +201,9 @@ const Help = () => {
 
 
   const handleUpdate = async (contactId : string) => {
-    console.log(contactId);
-    // trim contact id at _ and get documment id
-    const docId = contactId.split('_')[1];
-    console.log(docId);
+    console.log("contact ID",contactId);
 
-    updateDoc(doc(db, "contactus", docId), {
+    await updateDoc(doc(db, "contactus", contactId), {
       isResolved: true,
       resolvedAt: Timestamp.now()
     }).then(() => {
@@ -246,7 +243,9 @@ const Help = () => {
   useEffect(() => {
     if (loggedIn && request.length === 0) {
       getRequests();
-    } else {
+    } 
+    if(!loggedIn){
+      navigate("/");
     }
   },[adminData, request]);
   return (
